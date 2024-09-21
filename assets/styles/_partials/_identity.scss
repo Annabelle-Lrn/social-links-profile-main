@@ -6,8 +6,7 @@
   margin: 0;
   .image{
     display: flex;
-    min-height: 80px;
-    height: 20%;
+    min-height: 100px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -36,7 +35,7 @@
       font-size: 0.8rem;
     }
     .job{
-      margin-top: 20px;
+      margin: 20px 0;
       font-size: 0.8rem;
       font-weight: 200;
     }
