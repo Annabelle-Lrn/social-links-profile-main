@@ -23,7 +23,7 @@ $green :rgb(105, 246, 63);
       background: rgba(212, 210, 210, 0.175);
       display: flex;
       border-radius: 10px; 
-      max-width: 40rem;
+      min-width: clamp(5rem, 20vw, 30rem);
 
       li{
         list-style-type: none;
