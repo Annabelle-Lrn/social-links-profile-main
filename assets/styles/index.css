@@ -15,6 +15,11 @@
   background: black;
   margin: 25% 5%;
 }
+@media screen and (min-width: 350px) {
+  * body {
+    margin: 0;
+  }
+}
 * body .card {
   padding: 1em;
   background: rgba(212, 210, 210, 0.175);
@@ -22,6 +27,12 @@
   flex-direction: column;
   border-radius: 10px;
   height: 100%;
+}
+@media screen and (min-width: 350px) {
+  * body .card {
+    width: 15%;
+    margin: 10% auto;
+  }
 }
 * body .card ul {
   margin: 0;
@@ -36,6 +47,12 @@
   text-align: center;
   font-weight: 400;
   font-size: 0.8rem;
+}
+* body .card li:hover {
+  background: rgb(53, 248, 63);
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
 }
 * body .card .link {
   margin-top: 20px;
