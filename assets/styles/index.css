@@ -48,6 +48,9 @@
   font-weight: 400;
   font-size: 0.8rem;
 }
+* body .card li a {
+  text-decoration: none;
+}
 * body .card li:hover {
   background: rgb(53, 248, 63);
   color: black;

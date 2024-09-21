@@ -43,6 +43,10 @@
         font-weight: 400;
         font-size: 0.8rem;
 
+        a{
+          text-decoration: none;
+        }
+
         &:hover{
           background: rgb(53, 248, 63);
           color: black;
