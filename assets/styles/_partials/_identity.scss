@@ -6,37 +6,33 @@
   margin: 0;
   .image{
     display: flex;
-    min-height: 100px;
+    min-height: 2.5rem;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: 5px 10px;
+    padding: 1rem;
 
     img{
       border-radius: 50%;
-      height: 100%;
-      width: auto;
-      justify-self: center;
+      width: 50%;
       align-self: center;
   }
   }
-    .name, .locality,.job{
+    h1, h3, h5{
      height: 0.9em;
      text-align: center;
     }
-    .name{
-      margin: 10px 0;
-      font-size: 1.2rem;
+    h1{
+      margin: 1rem 0;
+      font-size: 1.5rem;
     }
-    .locality{
+    h3{
       font-size: 0.7rem;
-      color: rgb(105, 246, 63);
-      margin-top: 5px;
+      color: $green;
+      font-weight: 300;
       font-size: 0.8rem;
     }
-    .job{
-      margin: 20px 0;
-      font-size: 0.8rem;
+    h5{
+      margin: 2.5rem 0 0.9rem;
       font-weight: 200;
     }
   

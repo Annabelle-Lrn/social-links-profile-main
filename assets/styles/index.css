@@ -1,47 +1,34 @@
 @font-face {
   font-family: "inter";
   src: url("/assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
+  margin: 0;
   padding: 0;
   color: whitesmoke;
   font-family: "inter";
 }
 * body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  justify-items: center;
   background: black;
-  margin: 25% 5%;
-}
-@media screen and (min-width: 350px) {
-  * body {
-    margin: 0;
-  }
 }
 * body .card {
-  padding: 1em;
-  background: rgba(212, 210, 210, 0.175);
   display: flex;
   flex-direction: column;
+  margin: 5rem 0 1rem;
+  padding: 1rem;
+  background: rgba(212, 210, 210, 0.175);
+  display: flex;
   border-radius: 10px;
-  height: 100%;
-}
-@media screen and (min-width: 350px) {
-  * body .card {
-    width: 15%;
-    margin: 10% auto;
-  }
-}
-* body .card ul {
-  margin: 0;
-  margin-top: 15px;
+  max-width: 40rem;
 }
 * body .card li {
   list-style-type: none;
-  padding: 10px 5px;
-  margin: 15px 5px;
+  padding: 1rem;
+  margin: 1rem;
   border-radius: 5px;
   background: rgba(128, 128, 128, 0.414);
   text-align: center;
@@ -53,12 +40,11 @@
 }
 * body .card li:hover {
   background: rgb(53, 248, 63);
-  color: black;
   font-weight: 600;
   cursor: pointer;
 }
-* body .card .link {
-  margin-top: 20px;
+* body .card li:hover a {
+  color: black;
 }
 
 .identity {
@@ -70,35 +56,31 @@
 }
 .identity .image {
   display: flex;
-  min-height: 100px;
+  min-height: 2.5rem;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 5px 10px;
+  padding: 1rem;
 }
 .identity .image img {
   border-radius: 50%;
-  height: 100%;
-  width: auto;
-  justify-self: center;
+  width: 50%;
   align-self: center;
 }
-.identity .name, .identity .locality, .identity .job {
+.identity h1, .identity h3, .identity h5 {
   height: 0.9em;
   text-align: center;
 }
-.identity .name {
-  margin: 10px 0;
-  font-size: 1.2rem;
+.identity h1 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
 }
-.identity .locality {
+.identity h3 {
   font-size: 0.7rem;
   color: rgb(105, 246, 63);
-  margin-top: 5px;
+  font-weight: 300;
   font-size: 0.8rem;
 }
-.identity .job {
-  margin: 20px 0;
-  font-size: 0.8rem;
+.identity h5 {
+  margin: 2.5rem 0 0.9rem;
   font-weight: 200;
 }/*# sourceMappingURL=index.css.map */
